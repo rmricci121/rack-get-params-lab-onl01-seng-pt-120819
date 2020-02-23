@@ -27,8 +27,12 @@ class Application
       end
       end
      end
+     if req.path.match(/add/)
+       
     resp.finish
   end
+  
+  
 
   def handle_search(search_term)
     if @@items.include?(search_term)
