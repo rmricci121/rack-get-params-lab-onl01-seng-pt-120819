@@ -24,15 +24,7 @@ class Application
       resp.write "Path Not Found"
     end
     
-    if req.path.match(/cart/)
-      if @@cart.empty?
-        resp.write "Your cart is empty"
-      else
-      @@cart.each do |cart|
-        resp.write "#{cart}\n"
-      end
-      end
-     end
+    
      if req.path.match(/add/)
        add_item = req.params["item"]
        if @@items.include?(add_item)
