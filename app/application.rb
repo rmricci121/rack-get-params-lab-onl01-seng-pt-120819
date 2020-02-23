@@ -34,6 +34,7 @@ class Application
        else
          resp.write "We dont't have that item"
        end
+     end
     resp.finish
   end
   
