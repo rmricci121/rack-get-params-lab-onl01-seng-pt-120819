@@ -26,7 +26,7 @@ class Application
         resp.write "#{cart}\n"
       end
       end
-
+     end
     resp.finish
   end
 
