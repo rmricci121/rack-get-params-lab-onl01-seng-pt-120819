@@ -19,6 +19,8 @@ class Application
     end
     
     if req.path.match(/cart/)
+      if @@cart.empty?
+        resp.write ""
       @@cart.each do |cart|
         resp.write "#{cart}\n"
       end
