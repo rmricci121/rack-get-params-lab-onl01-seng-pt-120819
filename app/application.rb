@@ -28,6 +28,7 @@ class Application
       end
      end
      if req.path.match(/add/)
+       add_item = req.param["item"]
        
     resp.finish
   end
