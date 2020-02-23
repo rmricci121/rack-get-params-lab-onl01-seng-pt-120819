@@ -29,7 +29,7 @@ class Application
      end
      if req.path.match(/add/)
        add_item = req.params["item"]
-       if @@item.include?(add_item)
+       if @@items.include?(add_item)
          @@cart << add_item
        else
          resp.write "We dont't have that item"
